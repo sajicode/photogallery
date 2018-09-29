@@ -10,7 +10,9 @@
 
 body {
   background-color: #e5e2b0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Courier New',
+    Courier,
+    monospace;
 }
 
 header {
@@ -20,7 +22,6 @@ header {
 
 header>h1 {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
   color: #7f2d38;
 }
 
@@ -99,5 +100,12 @@ button {
   left: 0.1em;
   text-indent: 0;
   content: "\00D7";
+  color: #fff;
   background-color: rgba(0, 0, 0, 0);
+}
+
+#footer {
+  width: 100%;
+  margin-top: 1em;
+  padding: 2em;
 }
