@@ -13,6 +13,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+header {
+  width: 100%;
+  padding: 1em auto;
+}
+
+header>h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #7f2d38;
+}
+
 .mini-img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -36,7 +47,7 @@ body {
 /* modal settings */
 button {
   padding: 0.5em 0.7em;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.1));
   font-size: 1em;
 }
 
@@ -56,12 +67,12 @@ button {
 
 .modal-body {
   position: fixed;
-  top: 10em;
-  bottom: 10em;
-  right: 20%;
-  left: 20%;
-  padding: 2em 3em;
-  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 25%;
+  left: 30%;
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0);
   overflow: auto;
   z-index: 2;
 }
@@ -78,6 +89,7 @@ button {
   text-indent: 10em;
   overflow: hidden;
   border: 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-close::after {
@@ -87,4 +99,5 @@ button {
   left: 0.1em;
   text-indent: 0;
   content: "\00D7";
+  background-color: rgba(0, 0, 0, 0);
 }

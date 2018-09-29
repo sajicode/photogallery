@@ -5,26 +5,11 @@ let images = document.querySelectorAll('.image');
 let modalImg = document.getElementById('modal-img')
 
 
-// button.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   modal.style.display = 'block';
-// });
-
-// figures.forEach(figure => {
-//   figure.addEventListener('click', (e) => {
-//     e.preventDefault();
-//   })
-// })
-
-images.forEach(button => {
-  if (button.classList.contains('image')) {
-    button.addEventListener('click', function (e) {
+images.forEach(image => {
+  if (image.classList.contains('image')) {
+    image.addEventListener('click', function (e) {
       e.preventDefault();
       let currentImg = e.target.getAttribute("src");
-      // images.forEach(image => {
-      //   let x = image.getAttribute("src");
-      //   console.log(x);
-      // })
       modalImg.setAttribute("src", currentImg);
       modal.style.display = 'block';
     });
